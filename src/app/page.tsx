@@ -66,6 +66,42 @@ const tools = [
     color: "text-pink-400",
     bg: "bg-pink-500/10",
   },
+  {
+    name: "Cron Expression Builder",
+    description:
+      "Build cron schedules visually. See human-readable explanations and next run times.",
+    href: "/cron-builder",
+    icon: "*/5",
+    color: "text-cyan-400",
+    bg: "bg-cyan-500/10",
+  },
+  {
+    name: "Unix Timestamp Converter",
+    description:
+      "Convert epoch timestamps to dates and back. Live current timestamp display.",
+    href: "/timestamp-converter",
+    icon: "UTC",
+    color: "text-emerald-400",
+    bg: "bg-emerald-500/10",
+  },
+  {
+    name: "JSON Diff Viewer",
+    description:
+      "Compare two JSON objects and see added, removed, and changed values highlighted.",
+    href: "/json-diff",
+    icon: "+-",
+    color: "text-amber-400",
+    bg: "bg-amber-500/10",
+  },
+  {
+    name: "Markdown Preview",
+    description:
+      "Write Markdown and see it rendered in real-time. Supports full GFM syntax.",
+    href: "/markdown-preview",
+    icon: "MD",
+    color: "text-indigo-400",
+    bg: "bg-indigo-500/10",
+  },
 ];
 
 export default function HomePage() {

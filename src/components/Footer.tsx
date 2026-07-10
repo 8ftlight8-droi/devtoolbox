@@ -36,6 +36,18 @@ export function Footer() {
             <Link href="/color-converter" className="hover:text-gray-300">
               Color Converter
             </Link>
+            <Link href="/cron-builder" className="hover:text-gray-300">
+              Cron Builder
+            </Link>
+            <Link href="/timestamp-converter" className="hover:text-gray-300">
+              Timestamp
+            </Link>
+            <Link href="/json-diff" className="hover:text-gray-300">
+              JSON Diff
+            </Link>
+            <Link href="/markdown-preview" className="hover:text-gray-300">
+              Markdown
+            </Link>
           </nav>
         </div>
 

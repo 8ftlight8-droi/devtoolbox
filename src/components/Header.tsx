@@ -11,6 +11,10 @@ const tools = [
   { name: "Hash", href: "/hash-generator" },
   { name: "URL", href: "/url-encoder" },
   { name: "Color", href: "/color-converter" },
+  { name: "Cron", href: "/cron-builder" },
+  { name: "Time", href: "/timestamp-converter" },
+  { name: "Diff", href: "/json-diff" },
+  { name: "MD", href: "/markdown-preview" },
 ];
 
 export function Header() {
