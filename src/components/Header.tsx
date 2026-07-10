@@ -8,6 +8,9 @@ const tools = [
   { name: "Regex", href: "/regex-tester" },
   { name: "Base64", href: "/base64" },
   { name: "JWT", href: "/jwt-decoder" },
+  { name: "Hash", href: "/hash-generator" },
+  { name: "URL", href: "/url-encoder" },
+  { name: "Color", href: "/color-converter" },
 ];
 
 export function Header() {

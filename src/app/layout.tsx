@@ -12,12 +12,19 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://devtoolbox-henna-three.vercel.app"),
   title: {
     default: "DevToolBox — Free Developer Utilities",
     template: "%s | DevToolBox",
   },
   description:
     "Free online developer tools: JSON formatter, regex tester, Base64 encoder/decoder, JWT decoder, and more. No signup required.",
+  verification: {
+    google: "jGLIW5GM2CYF9lslUds_SH36Kjb1V-ireiCnWL33-Jc",
+  },
+  alternates: {
+    canonical: "/",
+  },
   keywords: [
     "developer tools",
     "json formatter",

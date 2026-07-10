@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { RegexTesterTool } from "./RegexTesterTool";
 import { AdSlot } from "@/components/AdSlot";
+import { ToolStructuredData, BreadcrumbStructuredData } from "@/components/StructuredData";
 
 export const metadata: Metadata = {
   title: "Regex Tester — Test Regular Expressions Online in Real-Time",
@@ -15,11 +16,19 @@ export const metadata: Metadata = {
     "regex validator",
     "javascript regex",
   ],
+  alternates: { canonical: "/regex-tester" },
 };
 
 export default function RegexTesterPage() {
   return (
     <div className="mx-auto max-w-6xl px-4 py-8">
+      <ToolStructuredData
+        name="Regex Tester"
+        description="Free online regex tester. Test regular expressions with real-time match highlighting. Supports JavaScript regex flags."
+        url="/regex-tester"
+        category="DeveloperApplication"
+      />
+      <BreadcrumbStructuredData items={[{ name: "Home", url: "/" }, { name: "Regex Tester", url: "/regex-tester" }]} />
       <div className="mb-8">
         <h1 className="text-3xl font-bold text-white">
           Regex Tester

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Base64Tool } from "./Base64Tool";
 import { AdSlot } from "@/components/AdSlot";
+import { ToolStructuredData, BreadcrumbStructuredData } from "@/components/StructuredData";
 
 export const metadata: Metadata = {
   title: "Base64 Encoder/Decoder — Encode and Decode Base64 Online",
@@ -15,11 +16,19 @@ export const metadata: Metadata = {
     "base64 converter",
     "text to base64",
   ],
+  alternates: { canonical: "/base64" },
 };
 
 export default function Base64Page() {
   return (
     <div className="mx-auto max-w-6xl px-4 py-8">
+      <ToolStructuredData
+        name="Base64 Encoder/Decoder"
+        description="Free online Base64 encoder and decoder. Convert text to Base64 and back instantly. Supports UTF-8."
+        url="/base64"
+        category="DeveloperApplication"
+      />
+      <BreadcrumbStructuredData items={[{ name: "Home", url: "/" }, { name: "Base64", url: "/base64" }]} />
       <div className="mb-8">
         <h1 className="text-3xl font-bold text-white">
           Base64 Encoder / Decoder

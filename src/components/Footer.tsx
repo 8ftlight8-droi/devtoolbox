@@ -27,6 +27,15 @@ export function Footer() {
             <Link href="/jwt-decoder" className="hover:text-gray-300">
               JWT Decoder
             </Link>
+            <Link href="/hash-generator" className="hover:text-gray-300">
+              Hash Generator
+            </Link>
+            <Link href="/url-encoder" className="hover:text-gray-300">
+              URL Encoder
+            </Link>
+            <Link href="/color-converter" className="hover:text-gray-300">
+              Color Converter
+            </Link>
           </nav>
         </div>
 

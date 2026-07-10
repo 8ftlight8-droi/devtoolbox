@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { JsonFormatterTool } from "./JsonFormatterTool";
 import { AdSlot } from "@/components/AdSlot";
+import { ToolStructuredData, BreadcrumbStructuredData } from "@/components/StructuredData";
 
 export const metadata: Metadata = {
   title: "JSON Formatter & Validator — Format, Beautify, and Validate JSON Online",
@@ -15,11 +16,24 @@ export const metadata: Metadata = {
     "validate json",
     "pretty print json",
   ],
+  alternates: { canonical: "/json-formatter" },
 };
 
 export default function JsonFormatterPage() {
   return (
     <div className="mx-auto max-w-6xl px-4 py-8">
+      <ToolStructuredData
+        name="JSON Formatter & Validator"
+        description="Free online JSON formatter and validator. Beautify, minify, and validate JSON data instantly."
+        url="/json-formatter"
+        category="DeveloperApplication"
+      />
+      <BreadcrumbStructuredData
+        items={[
+          { name: "Home", url: "/" },
+          { name: "JSON Formatter", url: "/json-formatter" },
+        ]}
+      />
       <div className="mb-8">
         <h1 className="text-3xl font-bold text-white">
           JSON Formatter & Validator

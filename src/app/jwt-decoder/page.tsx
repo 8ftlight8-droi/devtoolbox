@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { JwtDecoderTool } from "./JwtDecoderTool";
 import { AdSlot } from "@/components/AdSlot";
+import { ToolStructuredData, BreadcrumbStructuredData } from "@/components/StructuredData";
 
 export const metadata: Metadata = {
   title: "JWT Decoder — Decode and Inspect JSON Web Tokens Online",
@@ -16,11 +17,19 @@ export const metadata: Metadata = {
     "jwt claims",
     "token decoder",
   ],
+  alternates: { canonical: "/jwt-decoder" },
 };
 
 export default function JwtDecoderPage() {
   return (
     <div className="mx-auto max-w-6xl px-4 py-8">
+      <ToolStructuredData
+        name="JWT Decoder"
+        description="Free online JWT decoder. Decode and inspect JSON Web Tokens. View header, payload, claims, and expiration."
+        url="/jwt-decoder"
+        category="DeveloperApplication"
+      />
+      <BreadcrumbStructuredData items={[{ name: "Home", url: "/" }, { name: "JWT Decoder", url: "/jwt-decoder" }]} />
       <div className="mb-8">
         <h1 className="text-3xl font-bold text-white">JWT Decoder</h1>
         <p className="mt-2 text-gray-400">

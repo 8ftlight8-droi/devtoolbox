@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { AdSlot } from "@/components/AdSlot";
+import { WebsiteStructuredData } from "@/components/StructuredData";
 
 const tools = [
   {
@@ -38,11 +39,39 @@ const tools = [
     color: "text-purple-400",
     bg: "bg-purple-500/10",
   },
+  {
+    name: "Hash Generator",
+    description:
+      "Generate MD5, SHA-1, SHA-256, and SHA-512 hashes from any text using the Web Crypto API.",
+    href: "/hash-generator",
+    icon: "#",
+    color: "text-red-400",
+    bg: "bg-red-500/10",
+  },
+  {
+    name: "URL Encoder/Decoder",
+    description:
+      "Encode special characters for URLs or decode percent-encoded strings. Supports encodeURI and encodeURIComponent.",
+    href: "/url-encoder",
+    icon: "%",
+    color: "text-orange-400",
+    bg: "bg-orange-500/10",
+  },
+  {
+    name: "Color Converter",
+    description:
+      "Convert colors between HEX, RGB, and HSL formats with a live color preview.",
+    href: "/color-converter",
+    icon: "HEX",
+    color: "text-pink-400",
+    bg: "bg-pink-500/10",
+  },
 ];
 
 export default function HomePage() {
   return (
     <div className="mx-auto max-w-6xl px-4 py-12">
+      <WebsiteStructuredData />
       {/* Hero */}
       <section className="text-center">
         <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
